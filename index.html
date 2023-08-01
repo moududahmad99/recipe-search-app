@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Recipe Search App</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <h2>Recipe Search App</h2>
+    <div class="container">
+        <div class="recipe-search">
+            <h1>Recipe Search App</h1>
+            <form id="searchForm">
+                <input type="text" id="searchQuery" placeholder="example/pizza" required>
+                <button type="submit" class="recipe-searchBtn">Search</button>
+            </form>
+
+            <div id="recipeResults"></div>
+            <button id="viewMoreButton">View More</button>
+        </div>
+    </div>
+
+    <div id="modalContainer">
+        <div id="modalContent"></div>
+        <button id="closeModal">X</button>
+    </div>
+
+    <a href="#" class="goBack" onclick="goBack()"><i class="fas fa-backward"></i></a>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
